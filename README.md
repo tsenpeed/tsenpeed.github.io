@@ -10,7 +10,7 @@ My Static GitHub Pages portfolio
 - technologies and skills
 - GitHub contact links
 
-## Technology
+## Technologies
 
 - html
 - css
