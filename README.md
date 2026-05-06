@@ -1,4 +1,4 @@
-# Vinicius
+# Vinicius "Tsen"
 
 My Static GitHub Pages portfolio
 
