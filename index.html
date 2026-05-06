@@ -25,35 +25,46 @@
           <span class="brand-mark">T</span>
           <span>Tsen</span>
         </a>
-        <nav aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div class="topbar-actions">
+          <nav aria-label="Primary navigation">
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#projects" data-i18n="nav.projects">Projects</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </nav>
+          <button
+            class="language-toggle"
+            type="button"
+            aria-label="Switch language to Portuguese"
+            aria-pressed="false"
+          >
+            PT
+          </button>
+        </div>
       </header>
 
       <main id="main">
         <section id="home" class="hero">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Computer Engineering Student</p>
+            <p class="eyebrow" data-i18n="hero.eyebrow">Computer Engineering Student</p>
             <h1>
-              Turning
-              <span class="gradient-text">data, Python, AI</span>
-              and BI into practical work.
+              <span data-i18n="hero.titleStart">Turning</span>
+              <span class="gradient-text" data-i18n="hero.titleHighlight">data, Python, AI</span>
+              <span data-i18n="hero.titleEnd">and BI into practical work.</span>
             </h1>
-            <p class="lede">
-              I'm Tsen, a Computer Engineering student focused on data analysis,
-              Power BI dashboards, business reports, Python, artificial
-              intelligence, and digital content workflows.
+            <p class="lede" data-i18n="hero.lede">
+              I'm Vinicius "Tsen" Almeida, a Computer Engineering student
+              focused on data analysis, Power BI dashboards, business reports,
+              Python, artificial intelligence, and digital content workflows.
             </p>
             <div class="hero-actions" aria-label="Primary actions">
-              <a class="button button-primary" href="#projects">Explore projects</a>
+              <a class="button button-primary" href="#projects" data-i18n="hero.primaryAction">Explore projects</a>
               <a
                 class="button button-secondary"
                 href="https://github.com/tsenpeed"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="hero.secondaryAction"
               >
                 GitHub profile
               </a>
@@ -62,21 +73,21 @@
 
           <aside class="signal-panel reveal" aria-label="Profile summary">
             <div>
-              <p class="panel-label">Current focus</p>
-              <strong>Data analysis, Power BI and Python for analysis.</strong>
+              <p class="panel-label" data-i18n="hero.focusLabel">Current focus</p>
+              <strong data-i18n="hero.focusText">Data analysis, Power BI and Python for analysis.</strong>
             </div>
             <div class="metric-grid" aria-label="Portfolio highlights">
               <span>
                 <strong>BI</strong>
-                Dashboards
+                <span data-i18n="hero.metricDashboards">Dashboards</span>
               </span>
               <span>
                 <strong>AI</strong>
-                Content
+                <span data-i18n="hero.metricContent">Content</span>
               </span>
               <span>
                 <strong>Code</strong>
-                Python
+                <span>Python</span>
               </span>
             </div>
           </aside>
@@ -84,22 +95,22 @@
 
         <section id="about" class="section about-section">
           <div class="section-heading">
-            <p class="eyebrow">About me</p>
-            <h2>A builder learning fast through data-centered projects.</h2>
+            <p class="eyebrow" data-i18n="about.eyebrow">About me</p>
+            <h2 data-i18n="about.title">A builder learning fast through data-centered projects.</h2>
           </div>
           <div class="about-grid">
             <article class="glass-card reveal">
               <span class="card-number">01</span>
-              <h3>Working on</h3>
-              <p>
+              <h3 data-i18n="about.card1Title">Working on</h3>
+              <p data-i18n="about.card1Text">
                 Data analysis, Power BI dashboards, and business reports that
                 make information easier to read, compare, and act on.
               </p>
             </article>
             <article class="glass-card reveal">
               <span class="card-number">02</span>
-              <h3>Creating with AI</h3>
-              <p>
+              <h3 data-i18n="about.card2Title">Creating with AI</h3>
+              <p data-i18n="about.card2Text">
                 AI-generated videos and digital content using generative AI
                 technologies, with attention to useful workflows instead of
                 one-off experiments.
@@ -107,8 +118,8 @@
             </article>
             <article class="glass-card reveal">
               <span class="card-number">03</span>
-              <h3>Learning next</h3>
-              <p>
+              <h3 data-i18n="about.card3Title">Learning next</h3>
+              <p data-i18n="about.card3Text">
                 Data science, Python for data analysis, and advanced BI
                 techniques to build sharper analytical products.
               </p>
@@ -119,14 +130,15 @@
         <section id="projects" class="section projects-section">
           <div class="section-heading split-heading">
             <div>
-              <p class="eyebrow">Projects</p>
-              <h2>Public work you can inspect.</h2>
+              <p class="eyebrow" data-i18n="projects.eyebrow">Projects</p>
+              <h2 data-i18n="projects.title">Public work you can inspect.</h2>
             </div>
             <a
               class="text-link"
               href="https://github.com/tsenpeed?tab=repositories"
               target="_blank"
               rel="noreferrer"
+              data-i18n="projects.viewAll"
             >
               View all repositories
             </a>
@@ -134,60 +146,63 @@
 
           <div class="project-grid">
             <article class="project-card project-card-featured project-python reveal">
-              <p class="project-kicker">Python learning</p>
+              <p class="project-kicker" data-i18n="projects.card1Kicker">Python learning</p>
               <h3>30DaysOfPython</h3>
-              <p>
+              <p data-i18n="projects.card1Text">
                 A public study path with daily Python exercises, notes, and
                 practice code for building stronger fundamentals.
               </p>
               <div class="project-meta">
                 <span>Python</span>
-                <span>Study log</span>
+                <span data-i18n="projects.card1Meta">Study log</span>
               </div>
               <a
                 href="https://github.com/tsenpeed/30DaysOfPython"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="projects.openRepo"
               >
                 Open repository
               </a>
             </article>
 
             <article class="project-card project-html reveal">
-              <p class="project-kicker">HTML practice</p>
+              <p class="project-kicker" data-i18n="projects.card2Kicker">HTML practice</p>
               <h3>html_study</h3>
-              <p>
+              <p data-i18n="projects.card2Text">
                 University-focused HTML study project with front-end practice
                 and static page experiments.
               </p>
               <div class="project-meta">
                 <span>HTML</span>
-                <span>University</span>
+                <span data-i18n="projects.card2Meta">University</span>
               </div>
               <a
                 href="https://github.com/tsenpeed/html_study"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="projects.openRepo"
               >
                 Open repository
               </a>
             </article>
 
             <article class="project-card project-python reveal">
-              <p class="project-kicker">Python experiment</p>
+              <p class="project-kicker" data-i18n="projects.card3Kicker">Python experiment</p>
               <h3>mega_sena</h3>
-              <p>
+              <p data-i18n="projects.card3Text">
                 A compact Python repository for Mega-Sena experiments and
                 probability-oriented coding practice.
               </p>
               <div class="project-meta">
                 <span>Python</span>
-                <span>Analysis</span>
+                <span data-i18n="projects.card3Meta">Analysis</span>
               </div>
               <a
                 href="https://github.com/tsenpeed/mega_sena"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="projects.openRepo"
               >
                 Open repository
               </a>
@@ -197,8 +212,8 @@
 
         <section id="skills" class="section skills-section">
           <div class="section-heading">
-            <p class="eyebrow">Technologies & skills</p>
-            <h2>The stack I keep close.</h2>
+            <p class="eyebrow" data-i18n="skills.eyebrow">Technologies & skills</p>
+            <h2 data-i18n="skills.title">The stack I keep close.</h2>
           </div>
           <div class="skill-list" aria-label="Skills list">
             <span class="skill-python">Python</span>
@@ -206,19 +221,19 @@
             <span class="skill-sql">SQL</span>
             <span class="skill-dax">DAX</span>
             <span class="skill-excel">Excel</span>
-            <span class="skill-ai">Artificial Intelligence</span>
-            <span class="skill-prompt">Prompt Engineering</span>
-            <span class="skill-bi">Business Intelligence</span>
-            <span class="skill-data">Data Science</span>
+            <span class="skill-ai" data-i18n="skills.ai">Artificial Intelligence</span>
+            <span class="skill-prompt" data-i18n="skills.prompt">Prompt Engineering</span>
+            <span class="skill-bi" data-i18n="skills.bi">Business Intelligence</span>
+            <span class="skill-data" data-i18n="skills.dataScience">Data Science</span>
           </div>
         </section>
 
         <section id="contact" class="section contact-section">
           <div class="contact-card reveal">
             <div>
-              <p class="eyebrow">Contact</p>
-              <h2>Let’s connect around data, Python, BI, or AI.</h2>
-              <p>
+              <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+              <h2 data-i18n="contact.title">Let’s connect around data, Python, BI, or AI.</h2>
+              <p data-i18n="contact.text">
                 The quickest path is GitHub. You can inspect the work, follow
                 updates, or start a conversation from the profile.
               </p>
@@ -229,6 +244,7 @@
                 href="https://github.com/tsenpeed"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="contact.github"
               >
                 Visit GitHub
               </a>
@@ -237,6 +253,7 @@
                 href="https://github.com/tsenpeed/tsenpeed.github.io"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="contact.repo"
               >
                 Site repository
               </a>
@@ -245,5 +262,190 @@
         </section>
       </main>
     </div>
+    <script>
+      const translations = {
+        en: {
+          pageTitle: "Tsen | Data, Python & AI Portfolio",
+          metaDescription:
+            "Tsen's portfolio for data analysis, Python, Power BI, artificial intelligence, and business intelligence projects.",
+          switchLabel: "Switch language to Portuguese",
+          switchText: "PT",
+          nav: {
+            about: "About",
+            projects: "Projects",
+            skills: "Skills",
+            contact: "Contact",
+          },
+          hero: {
+            eyebrow: "Computer Engineering Student",
+            titleStart: "Turning",
+            titleHighlight: "data, Python, AI",
+            titleEnd: "and BI into practical work.",
+            lede:
+              'I\'m Vinicius "Tsen" Almeida, a Computer Engineering student focused on data analysis, Power BI dashboards, business reports, Python, artificial intelligence, and digital content workflows.',
+            primaryAction: "Explore projects",
+            secondaryAction: "GitHub profile",
+            focusLabel: "Current focus",
+            focusText: "Data analysis, Power BI and Python for analysis.",
+            metricDashboards: "Dashboards",
+            metricContent: "Content",
+          },
+          about: {
+            eyebrow: "About me",
+            title: "A builder learning fast through data-centered projects.",
+            card1Title: "Working on",
+            card1Text:
+              "Data analysis, Power BI dashboards, and business reports that make information easier to read, compare, and act on.",
+            card2Title: "Creating with AI",
+            card2Text:
+              "AI-generated videos and digital content using generative AI technologies, with attention to useful workflows instead of one-off experiments.",
+            card3Title: "Learning next",
+            card3Text:
+              "Data science, Python for data analysis, and advanced BI techniques to build sharper analytical products.",
+          },
+          projects: {
+            eyebrow: "Projects",
+            title: "Public work you can inspect.",
+            viewAll: "View all repositories",
+            card1Kicker: "Python learning",
+            card1Text:
+              "A public study path with daily Python exercises, notes, and practice code for building stronger fundamentals.",
+            card1Meta: "Study log",
+            card2Kicker: "HTML practice",
+            card2Text:
+              "University-focused HTML study project with front-end practice and static page experiments.",
+            card2Meta: "University",
+            card3Kicker: "Python experiment",
+            card3Text:
+              "A compact Python repository for Mega-Sena experiments and probability-oriented coding practice.",
+            card3Meta: "Analysis",
+            openRepo: "Open repository",
+          },
+          skills: {
+            eyebrow: "Technologies & skills",
+            title: "The stack I keep close.",
+            ai: "Artificial Intelligence",
+            prompt: "Prompt Engineering",
+            bi: "Business Intelligence",
+            dataScience: "Data Science",
+          },
+          contact: {
+            eyebrow: "Contact",
+            title: "Let's connect around data, Python, BI, or AI.",
+            text:
+              "The quickest path is GitHub. You can inspect the work, follow updates, or start a conversation from the profile.",
+            github: "Visit GitHub",
+            repo: "Site repository",
+          },
+        },
+        pt: {
+          pageTitle: "Tsen | Portfolio de Dados, Python e IA",
+          metaDescription:
+            "Portfolio do Tsen com projetos de análise de dados, Python, Power BI, inteligência artificial e business intelligence.",
+          switchLabel: "Mudar idioma para inglês",
+          switchText: "EN",
+          nav: {
+            about: "Sobre",
+            projects: "Projetos",
+            skills: "Habilidades",
+            contact: "Contato",
+          },
+          hero: {
+            eyebrow: "Estudante de Engenharia da Computação",
+            titleStart: "Transformando",
+            titleHighlight: "dados, Python, IA",
+            titleEnd: "e BI em trabalho prático.",
+            lede:
+              'Sou Vinicius "Tsen" Almeida, estudante de Engenharia da Computação com foco em análise de dados, dashboards em Power BI, relatórios de negócio, Python, inteligência artificial e fluxos de conteúdo digital.',
+            primaryAction: "Ver projetos",
+            secondaryAction: "Perfil no GitHub",
+            focusLabel: "Foco atual",
+            focusText: "Análise de dados, Power BI e Python para análises.",
+            metricDashboards: "Dashboards",
+            metricContent: "Conteúdo",
+          },
+          about: {
+            eyebrow: "Sobre mim",
+            title: "Um construtor aprendendo rápido com projetos centrados em dados.",
+            card1Title: "Trabalhando em",
+            card1Text:
+              "Análise de dados, dashboards em Power BI e relatórios de negócio que tornam as informações mais fáceis de ler, comparar e usar.",
+            card2Title: "Criando com IA",
+            card2Text:
+              "Vídeos gerados por IA e conteúdo digital usando tecnologias generativas, com atenção a fluxos úteis em vez de experimentos isolados.",
+            card3Title: "Próximos estudos",
+            card3Text:
+              "Ciência de dados, Python para análise de dados e técnicas avançadas de BI para criar produtos analíticos melhores.",
+          },
+          projects: {
+            eyebrow: "Projetos",
+            title: "Trabalhos públicos que você pode inspecionar.",
+            viewAll: "Ver todos os repositórios",
+            card1Kicker: "Aprendizado em Python",
+            card1Text:
+              "Uma trilha pública de estudos com exercícios diários de Python, anotações e código prático para fortalecer fundamentos.",
+            card1Meta: "Registro de estudo",
+            card2Kicker: "Prática de HTML",
+            card2Text:
+              "Projeto de estudo em HTML com foco universitário, prática de front-end e experimentos com páginas estáticas.",
+            card2Meta: "Universidade",
+            card3Kicker: "Experimento em Python",
+            card3Text:
+              "Um repositório compacto em Python para experimentos com Mega-Sena e prática de programação orientada a probabilidade.",
+            card3Meta: "Análise",
+            openRepo: "Abrir repositório",
+          },
+          skills: {
+            eyebrow: "Tecnologias e habilidades",
+            title: "As ferramentas que mantenho por perto.",
+            ai: "Inteligência Artificial",
+            prompt: "Engenharia de Prompt",
+            bi: "Business Intelligence",
+            dataScience: "Ciência de Dados",
+          },
+          contact: {
+            eyebrow: "Contato",
+            title: "Vamos conversar sobre dados, Python, BI ou IA.",
+            text:
+              "O caminho mais rápido é pelo GitHub. Você pode ver os trabalhos, acompanhar atualizações ou iniciar uma conversa pelo perfil.",
+            github: "Visitar GitHub",
+            repo: "Repositório do site",
+          },
+        },
+      };
+
+      const languageToggle = document.querySelector(".language-toggle");
+      const translatableElements = document.querySelectorAll("[data-i18n]");
+      const metaDescription = document.querySelector('meta[name="description"]');
+
+      function getTranslation(language, key) {
+        return key.split(".").reduce((group, part) => group && group[part], translations[language]);
+      }
+
+      function setLanguage(language) {
+        const copy = translations[language];
+
+        document.documentElement.lang = language === "pt" ? "pt-BR" : "en";
+        document.title = copy.pageTitle;
+        metaDescription.setAttribute("content", copy.metaDescription);
+
+        translatableElements.forEach((element) => {
+          element.textContent = getTranslation(language, element.dataset.i18n);
+        });
+
+        languageToggle.textContent = copy.switchText;
+        languageToggle.setAttribute("aria-label", copy.switchLabel);
+        languageToggle.setAttribute("aria-pressed", String(language === "pt"));
+        localStorage.setItem("language", language);
+      }
+
+      const savedLanguage = localStorage.getItem("language");
+      setLanguage(savedLanguage === "pt" ? "pt" : "en");
+
+      languageToggle.addEventListener("click", () => {
+        const nextLanguage = document.documentElement.lang === "pt-BR" ? "en" : "pt";
+        setLanguage(nextLanguage);
+      });
+    </script>
   </body>
 </html>

@@ -87,6 +87,7 @@ a {
 
 .brand,
 .topbar nav,
+.topbar-actions,
 .hero-actions,
 .contact-actions,
 .project-meta,
@@ -98,6 +99,11 @@ a {
 .brand {
   gap: 10px;
   font-weight: 800;
+}
+
+.topbar-actions {
+  justify-content: flex-end;
+  gap: 16px;
 }
 
 .brand-mark {
@@ -118,6 +124,31 @@ a {
   color: var(--muted);
   font-size: 0.94rem;
   font-weight: 700;
+}
+
+.language-toggle {
+  display: inline-flex;
+  width: 42px;
+  height: 36px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  border-color: rgba(77, 171, 247, 0.72);
+  color: var(--bg);
+  background: var(--blue);
 }
 
 .topbar a:hover,
@@ -307,7 +338,7 @@ h3 {
   gap: 10px;
 }
 
-.metric-grid span {
+.metric-grid > span {
   min-height: 96px;
   padding: 14px;
   border: 1px solid var(--line);
@@ -316,27 +347,27 @@ h3 {
   background: var(--surface-raised);
 }
 
-.metric-grid span:nth-child(1) {
+.metric-grid > span:nth-child(1) {
   border-color: rgba(242, 201, 76, 0.42);
 }
 
-.metric-grid span:nth-child(1) strong {
+.metric-grid > span:nth-child(1) strong {
   color: var(--yellow);
 }
 
-.metric-grid span:nth-child(2) {
+.metric-grid > span:nth-child(2) {
   border-color: rgba(167, 139, 250, 0.42);
 }
 
-.metric-grid span:nth-child(2) strong {
+.metric-grid > span:nth-child(2) strong {
   color: var(--violet);
 }
 
-.metric-grid span:nth-child(3) {
+.metric-grid > span:nth-child(3) {
   border-color: rgba(77, 171, 247, 0.42);
 }
 
-.metric-grid span:nth-child(3) strong {
+.metric-grid > span:nth-child(3) strong {
   color: var(--blue);
 }
 
@@ -582,6 +613,10 @@ h3 {
     border-radius: 28px;
   }
 
+  .topbar-actions {
+    flex-wrap: wrap;
+  }
+
   .hero,
   .about-grid,
   .project-grid,
@@ -620,6 +655,11 @@ h3 {
   .topbar {
     position: static;
     flex-direction: column;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .topbar nav {
