@@ -8,6 +8,12 @@
   --soft: #d8d8d8;
   --line: rgba(255, 255, 255, 0.13);
   --line-strong: rgba(255, 255, 255, 0.28);
+  --blue: #4dabf7;
+  --yellow: #f2c94c;
+  --green: #3fb950;
+  --teal: #2dd4bf;
+  --orange: #ff9f43;
+  --violet: #a78bfa;
   --radius-lg: 28px;
   --radius-md: 18px;
   --font-body: "Manrope", system-ui, sans-serif;
@@ -121,6 +127,19 @@ a {
   color: var(--text);
 }
 
+.text-link,
+.project-card a {
+  position: relative;
+}
+
+.text-link::after,
+.project-card a::after {
+  position: absolute;
+  right: -18px;
+  content: "->";
+  color: var(--blue);
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
@@ -199,7 +218,7 @@ h3 {
 }
 
 .gradient-text {
-  color: var(--text);
+  color: var(--blue);
 }
 
 .lede {
@@ -234,13 +253,13 @@ h3 {
 
 .button-primary {
   color: var(--bg);
-  background: var(--text);
+  background: var(--blue);
 }
 
 .button-secondary {
-  border-color: var(--line-strong);
+  border-color: rgba(77, 171, 247, 0.55);
   color: var(--text);
-  background: transparent;
+  background: rgba(77, 171, 247, 0.08);
 }
 
 .button-secondary:hover {
@@ -295,6 +314,30 @@ h3 {
   border-radius: 18px;
   color: var(--muted);
   background: var(--surface-raised);
+}
+
+.metric-grid span:nth-child(1) {
+  border-color: rgba(242, 201, 76, 0.42);
+}
+
+.metric-grid span:nth-child(1) strong {
+  color: var(--yellow);
+}
+
+.metric-grid span:nth-child(2) {
+  border-color: rgba(167, 139, 250, 0.42);
+}
+
+.metric-grid span:nth-child(2) strong {
+  color: var(--violet);
+}
+
+.metric-grid span:nth-child(3) {
+  border-color: rgba(77, 171, 247, 0.42);
+}
+
+.metric-grid span:nth-child(3) strong {
+  color: var(--blue);
 }
 
 .metric-grid strong {
@@ -371,10 +414,30 @@ h3 {
   display: flex;
   min-height: 330px;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .project-card-featured {
   background: var(--surface-raised);
+}
+
+.project-card::before {
+  display: block;
+  width: 38px;
+  height: 4px;
+  margin-bottom: 28px;
+  border-radius: 999px;
+  content: "";
+  background: var(--line-strong);
+}
+
+.project-python::before {
+  background: linear-gradient(90deg, var(--blue), var(--yellow));
+}
+
+.project-html::before {
+  background: var(--orange);
 }
 
 .project-card h3 {
@@ -392,7 +455,7 @@ h3 {
 .skill-list span {
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .project-meta span {
@@ -403,7 +466,9 @@ h3 {
 }
 
 .project-card a {
+  width: fit-content;
   margin-top: 22px;
+  color: var(--blue);
 }
 
 .skill-list {
@@ -415,6 +480,60 @@ h3 {
   padding: 11px 15px;
   color: var(--soft);
   font-weight: 800;
+}
+
+.skill-list .skill-python {
+  border-color: rgba(77, 171, 247, 0.5);
+  color: #b8ddff;
+  background: rgba(77, 171, 247, 0.11);
+}
+
+.skill-list .skill-powerbi {
+  border-color: rgba(242, 201, 76, 0.55);
+  color: #ffe899;
+  background: rgba(242, 201, 76, 0.12);
+}
+
+.skill-list .skill-sql {
+  border-color: rgba(45, 212, 191, 0.48);
+  color: #abfff4;
+  background: rgba(45, 212, 191, 0.1);
+}
+
+.skill-list .skill-dax {
+  border-color: rgba(77, 171, 247, 0.42);
+  color: #c5e5ff;
+  background: rgba(77, 171, 247, 0.08);
+}
+
+.skill-list .skill-excel {
+  border-color: rgba(63, 185, 80, 0.52);
+  color: #aff5bc;
+  background: rgba(63, 185, 80, 0.11);
+}
+
+.skill-list .skill-ai {
+  border-color: rgba(167, 139, 250, 0.5);
+  color: #ddd1ff;
+  background: rgba(167, 139, 250, 0.11);
+}
+
+.skill-list .skill-prompt {
+  border-color: rgba(255, 159, 67, 0.48);
+  color: #ffd2a6;
+  background: rgba(255, 159, 67, 0.1);
+}
+
+.skill-list .skill-bi {
+  border-color: rgba(242, 201, 76, 0.45);
+  color: #f8e7a2;
+  background: rgba(242, 201, 76, 0.08);
+}
+
+.skill-list .skill-data {
+  border-color: rgba(45, 212, 191, 0.46);
+  color: #b4fff4;
+  background: rgba(45, 212, 191, 0.09);
 }
 
 .contact-card {
