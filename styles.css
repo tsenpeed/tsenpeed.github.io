@@ -704,13 +704,19 @@ h3 {
   }
 
   .topbar {
-    position: static;
+    position: relative;
     flex-direction: column;
   }
 
   .topbar-actions {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .language-toggle {
+    position: absolute;
+    top: 12px;
+    right: 16px;
   }
 
   .topbar nav {
