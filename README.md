@@ -1,4 +1,4 @@
-# Vinicius de Paulo Almeida
+# Vinicius
 
 My Static GitHub Pages portfolio
 
